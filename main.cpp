@@ -15,15 +15,16 @@ int main(){
   std::cin >> location;
   std::cout << "How many days will the trip take? ";
   std::cin >> days;
-  std::cout << "What is the total hotel expense? ";
+  std::cout << "What is the total hotel expense? $";
   std::cin >> hotel;
-  std::cout << "What is the total meal expense? " ;
+  std::cout << "What is the total meal expense? $" ;
   std::cin >> meal;
-  std::cout << '/n';
+  std::cout << '\n';
 
-  std::cout << "Location" << std::setw(12) << "Days" << std::setw(12) << "Hotel" << std::setw(12) << "meal"
+  total = hotel + meal;
 
+  std::cout << std::setw(10) << "Location" << std::setw(10) << "Days" << std::setw(10) << "Hotel" << std::setw(10) << "Meal" << std::setw(10) << "Total\n";
+  std::cout << std::setw(10) << location << std::setw(10) << days << std::setw(10) << hotel << std::setw(10) << meal << std::setw(10) << total << '\n';
 
-
-
+  return 0;
 }
